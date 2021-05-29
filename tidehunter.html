@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doto 2</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cantora+One&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+        >
+        <link rel="icon" href="./logo-img-stock/logo.png">
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" media="screen and (max-width: 1300px)" href="stylesheet/mobile.css">
+        <script src="./js/script.js"></script>
+        <script src="./js/slider.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section id="main-content" class="hero">
+                <div id="nav-small">
+                    <div class="nav-header">
+                        <div class="toggle-btn" onclick="show('nav-s-content')">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo"></div>
+                    </div>
+                    <div id="nav-s-content">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li onclick="show('heroes-dropdown')">
+                                <a class="picked" href="#">
+                                    Heroes
+                                    <i class="fas fa-arrow-down"></i>
+                                </a>
+                            </li>
+                            <div id="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="game-mechanics.html">Game Mechanics</a>
+                            </li>
+                            <li>
+                                <a href="merchandise.html">Mercandises</a>
+                            </li>
+                            <li>
+                                <a href="registration.html">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li>
+                            <a class="logo-container" href="index.html">
+                                <div class="logo"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <div class="heroes-nav">
+                            <li>
+                                <a href="heroes.html">Heroes</a>
+                            </li>
+                            <div class="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <a href="game-mechanics.html">Game Mechanics</a>
+                        </li>
+                        <li>
+                            <a href="merchandise.html">Merchandises</a>
+                        </li>
+                        <li class="nav-end">
+                            <div class="round-button">
+                                <a href="registration.html">Register Now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="heroes-showcase">
+                    <div class="heroes-desc">
+                        <img src="./logo-img-stock/Tidehunter/Tidehunter_350px.max-400x400.png" alt="">
+                        <div class="hero-desc">
+                            <h1>TIDEHUNTER</h1>
+                            <div class="hero-type">
+                                <img src="./logo-img-stock/strenth.png" alt="">
+                                <h3>STRENGTH</h3>
+                            </div>
+                            <p>The Tidehunter known as Leviathan was once the champion of the Sunken Isles, but his motives are as mysterious as those of his people. We all know the importance of the Drylanders' shipping lanes, how empires may rise and fall according to who controls the open water. Far less is known of the submarine lanes, and how the warring tribes of the Meranthic Diaspora have carved out habitations through endless undersea skirmishes. In the fragile treaties between the Mer and Men, we can glimpse the extent of the drowned empires, but their politics appear complex and opaque. It would seem that Leviathan tired of such petty strife, and set off on his own, loyal only to his abyssal god, Maelrawn the Tentacular. He stalks the shallows now in search of men or meranths who stray into his path, and with a particular loathing for Admiral Kunkka, who has long been his nemesis for reasons lost in the deepest trenches of the sea.</p>
+                            <a class="btn" href="heroes.html">BACK TO ALL HEROES</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="heroes-abil">
+                <h1>ABILITIES</h1>
+                <video
+                    src="./logo-img-stock/rubick_fade_bolt.webm"
+                    no-controls
+                    autoplay
+                    muted
+                    loop
+                ></video>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Tidehunter/tidehunter-gush-5118-a90444ed70466c4c0dd707b8d6e21c880bcf3abb6a917e96cea723da09ec535a.jpg" alt="">
+                    <div class="abil-desc">
+                        <h2>Gush</h2>
+                        <p>Summons a gush of water to damage an enemy unit, reducing their movement speed and armor, Lasts seconds.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Tidehunter/images.jpg" alt="">
+                    <div class="abil-desc">
+                        <h2>Kraken Shell</h2>
+                        <p>Thickens Tidehunter's hide to passively block a portion of any incoming physical attack damage. The hide also removes negative status effects if the damage taken crosses a threshold. Does not stack with items that provide Damage Block.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Tidehunter/tidehunter-anchor-smash-5120-8fc0cc44fc91a8f28cf11856ecc3a2be56c839f38d6f24643bea8201b9f8d52d.jpg" alt="">
+                    <div class="abil-desc">
+                        <h2>Anchor Smash</h2>
+                        <p>Tidehunter swings his mighty anchor to attack and deal bonus damage to nearby enemies and reduce their attack damage.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Tidehunter/Ravage_icon.png" alt="">
+                    <div class="abil-desc">
+                        <h2>Ravage</h2>
+                        <p>Slams the ground, causing tentacles to erupt in all directions, damaging and stunning all nearby enemy units.</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="dota-logo">
+                    <img src="./logo-img-stock/logo-text.png" alt="">
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/dota2/">
+                        <div class="facebook"></div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/dota2/">
+                        <div class="instagram"></div>
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <p>Doto and the Doto logo are trademarks and/ or registered trademarks of Valve Corporation. 2021 Sunib Corporation, all rights reserved</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

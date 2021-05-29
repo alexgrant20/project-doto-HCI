@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doto 2</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cantora+One&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+        >
+        <link rel="icon" href="./logo-img-stock/logo.png">
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" media="screen and (max-width: 1300px)" href="stylesheet/mobile.css">
+        <script src="./js/script.js"></script>
+        <script src="./js/slider.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section id="main-content" class="hero">
+                <div id="nav-small">
+                    <div class="nav-header">
+                        <div class="toggle-btn" onclick="show('nav-s-content')">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo"></div>
+                    </div>
+                    <div id="nav-s-content">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li onclick="show('heroes-dropdown')">
+                                <a class="picked" href="#">
+                                    Heroes
+                                    <i class="fas fa-arrow-down"></i>
+                                </a>
+                            </li>
+                            <div id="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="game-mechanics.html">Game Mechanics</a>
+                            </li>
+                            <li>
+                                <a href="merchandise.html">Mercandises</a>
+                            </li>
+                            <li>
+                                <a href="registration.html">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li>
+                            <a class="logo-container" href="index.html">
+                                <div class="logo"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <div class="heroes-nav">
+                            <li>
+                                <a href="heroes.html">Heroes</a>
+                            </li>
+                            <div class="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <a href="game-mechanics.html">Game Mechanics</a>
+                        </li>
+                        <li>
+                            <a href="merchandise.html">Merchandises</a>
+                        </li>
+                        <li class="nav-end">
+                            <div class="round-button">
+                                <a href="registration.html">Register Now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="heroes-showcase">
+                    <div class="heroes-desc">
+                        <img src="./logo-img-stock/Tiny/tiny.png" class="flip-h" alt="">
+                        <div class="hero-desc">
+                            <h1>TINY</h1>
+                            <div class="hero-type">
+                                <img src="./logo-img-stock/strenth.png" alt="">
+                                <h3>STRENGTH</h3>
+                            </div>
+                            <p>Coming to life as a chunk of stone, Tiny's origins are a mystery on which he continually speculates. He is a Stone Giant now, but what did he used to be? A splinter broken from a Golem's heel? A shard swept from a gargoyle-sculptor's workshop? A fragment of the Oracular Visage of Garthos? A deep curiosity drives him, and he travels the world tirelessly seeking his origins, his parentage, his people. As he roams, he gathers weight and size; the forces that weather lesser rocks, instead cause Tiny to grow and ever grow.</p>
+                            <a class="btn" href="heroes.html">BACK TO ALL HEROES</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="heroes-abil">
+                <h1>ABILITIES</h1>
+                <video
+                    src="./logo-img-stock/rubick_fade_bolt.webm"
+                    no-controls
+                    autoplay
+                    muted
+                    loop
+                ></video>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Tiny/tiny_avalanche.png" alt="">
+                    <div class="abil-desc">
+                        <h2>Avalanche</h2>
+                        <p>Bombards an area with rocks, continuously doing small intervals of damage and stun to enemy units. Avalanche does 2.5x damage to units being tossed.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Tiny/tiny_toss.png" alt="">
+                    <div class="abil-desc">
+                        <h2>Toss</h2>
+                        <p>Grabs the nearest unit in a 275 radius around Tiny, ally or enemy, and launches it at the target unit or rune to deal damage where they land. If the tossed unit is an enemy, it will take an extra 30% damage.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Tiny/tiny-tree-grab-5108-35b7b71edb18374bec0120d73a63e893e1a37f05f0e474f0c05a5ab039a83364.jpg" alt="">
+                    <div class="abil-desc">
+                        <h2>Tree grab</h2>
+                        <p>Grabs a tree to whack enemies on the head for a limited number of attacks. Grants bonus attack range. Attacks deal more damage and fully splash on units along the way. The tree can be thrown, to deal your attack to a unit at a distance.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Tiny/tiny-tree-grab-5108-35b7b71edb18374bec0120d73a63e893e1a37f05f0e474f0c05a5ab039a83364.jpg" alt="">
+                    <div class="abil-desc">
+                        <h2>Tree throw</h2>
+                        <p>Throws the tree at the target unit, proccing your attack on it and splashing damage around the target.</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="dota-logo">
+                    <img src="./logo-img-stock/logo-text.png" alt="">
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/dota2/">
+                        <div class="facebook"></div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/dota2/">
+                        <div class="instagram"></div>
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <p>Doto and the Doto logo are trademarks and/ or registered trademarks of Valve Corporation. 2021 Sunib Corporation, all rights reserved</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,391 @@
+
+h1{
+    font-size: clamp(35px, 10vw, 65px);
+}
+
+h2{
+    font-size: clamp(32px, 10vw, 40px);
+}
+
+h3{
+    font-size:clamp(22px, 6.5vw, 30px);
+}
+
+p{
+    font-size: clamp(12px, 5vw, 25px);
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.icon-large{
+    width: 45px;
+    height: 45px;
+}
+
+.modal h2{
+    font-size: 10vw;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    position: relative;
+}
+
+.btn{
+    font-size: clamp(12px, 5vw, 25px);
+    max-width: 250px;
+}
+
+#nav{
+    display: none;
+}
+
+#nav-small {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    min-width: 100vw;
+    height: auto;
+    z-index: 10;   
+    margin: 30px 0 0 20px;
+}
+
+
+.nav-header{
+    display: flex;
+}
+
+#nav-small .toggle-btn{ 
+    z-index: 100;
+    align-self: center;
+}
+
+#nav-s-content{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    min-width: 90vw;
+    z-index: 1;
+    top: 75px;
+}
+
+.active{
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+    80% {
+      transform: scaleY(1.1)
+    }
+    100% {
+      transform: scaleY(1)
+    }
+  }
+
+#nav-s-content ul{
+    list-style: none;
+    padding: 30px 0;
+  
+}
+
+#nav-s-content li{
+    padding: 15px;
+    text-align: left;
+    margin: auto;
+    background-color: rgb(31, 30, 30);
+}
+
+
+
+#nav-s-content a{
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #777;
+}
+
+#nav-s-content #heroes-dropdown{
+    display: none;
+    position: relative;
+    background-color: rgb(31, 30, 30);
+    min-width: 160px;
+    z-index: 10;
+}
+
+#nav-s-content #heroes-dropdown a {
+
+    padding: 16px 25px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+}
+
+
+#nav-s-content .heroes-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-s-content #heroes-dropdown .heroes-type p:hover {  color: rgb(255, 255, 255) !important;}
+
+
+#nav-s-content .heroes-type p{
+    display: inline;
+    margin-left: 10px;
+    font-size: 2rem;
+    color: #777;
+}
+
+#nav-s-content .dropdown-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+#nav-s-content a:hover,
+#nav-s-content .picked{
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 0.75rem #fff);
+}
+
+#nav-small .logo{
+    position: relative;
+    background: url('../logo-img-stock/logo.png') no-repeat;
+    width: 70px;
+    height: 70px;
+    background-size: 100% 100%;
+    margin-left: 30px;
+    align-items: center;
+    justify-self: center;
+    top: 5px;
+}
+
+.toggle-btn span{
+    display: block;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    margin-top: 5px;
+    z-index: 100;
+}
+
+.h-content{
+    margin-top: 0;
+}
+
+.h-content p{
+   margin:0;
+} 
+
+
+.h-content h1{
+    width: 85%;
+    margin: 100px auto 0;
+}
+
+.h-content p{
+    margin: 4rem 0;
+}
+
+/* GALLERY OF HEROES */
+
+
+#gallery-heroes .heroes .hero{
+    height: 300px;
+}
+
+#gallery-heroes .hero-video-desc {
+    display: none;
+}
+
+
+
+
+#gallery-heroes .hero-video video{
+    margin-top: 40px;
+}
+
+#gallery-heroes .hero-sc{
+    flex-wrap: wrap;
+}
+
+
+
+  
+/* GAME MECHANICS */
+
+#game-mechanics .mecha-video{
+    display: none;
+}
+
+/* MERCH */
+
+
+
+#index-merchandise .merchandise-container img{
+   display: none;
+}
+
+
+#index-merchandise .box-container{
+    flex-direction: column;
+}
+
+#index-merchandise .merch-container{
+    margin-bottom: 20px;
+    width: 80vw;
+    max-width: 400px;
+
+}
+
+#index-merchandise .merchandise-container .merch-container img{
+    width: 25vw;
+    height: 25vw;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+
+footer .dota-logo img{
+    width: 10vw;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+footer p{
+    width: 100%;
+
+}
+
+.registration .registration-header{
+    display: none;
+}
+
+
+.registration{
+    margin-top: 5vh;
+    padding-bottom: 80px;
+}
+
+.registration .content{
+    margin: auto;
+    padding: 20px;
+}
+
+.registration .warning p{
+    font-size: 12px;
+}
+
+.registration .content .input-data{
+    margin: 0 0 48px; 
+}
+
+#heroes-showcase .heroes-desc{
+   flex-wrap: wrap;
+}
+
+#heroes-showcase .btn{
+    margin: 30px auto 0;
+
+}
+
+.heroes-desc img{
+    width: 80vw;
+    height: 80vw;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.hero-type{
+    align-content: center;
+    justify-content: center;
+}
+
+.hero-desc{
+    text-align: center;
+    padding: 0 20px;
+}
+
+.heroes-desc p{
+    margin: auto;
+}
+
+.hero-abil{
+    flex-direction: column;
+}
+
+
+.heroes-abil video{
+    width: 100%;
+    max-width: 650px;
+}
+
+
+.hero-abil img{
+    width: 20vw;
+    margin-bottom: 10px;
+}
+
+.abil-desc{
+    margin: 0;
+}
+
+.abil-desc h2{
+    text-align: center;
+}
+
+.abil-desc p{
+    width: 100%;
+    text-align: justify;
+    margin: auto;
+}
+
+.heroes-desc img{
+    max-width: 700px;
+}
+
+.heroes-abil video{
+    display: none;
+}
+
+.heroes-search .hero-type, 
+.heroes-search p{
+    margin: auto;
+}
+
+.back-text{
+    display: none;
+}
+
+.merch .btn{
+    width: 60vw;
+    max-width: 230px;
+}
+
+@media  screen and (max-width: 600px) {
+    #gallery-heroes .type{
+        display: none;
+    }
+
+    #gallery-heroes .hero-video video{
+        display: none;
+    }
+}

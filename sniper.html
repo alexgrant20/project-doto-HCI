@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doto 2</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cantora+One&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+        >
+        <link rel="icon" href="./logo-img-stock/logo.png">
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" media="screen and (max-width: 1300px)" href="stylesheet/mobile.css">
+        <script src="./js/script.js"></script>
+        <script src="./js/slider.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section id="main-content" class="hero">
+                <div id="nav-small">
+                    <div class="nav-header">
+                        <div class="toggle-btn" onclick="show('nav-s-content')">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo"></div>
+                    </div>
+                    <div id="nav-s-content">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li onclick="show('heroes-dropdown')">
+                                <a class="picked" href="#">
+                                    Heroes
+                                    <i class="fas fa-arrow-down"></i>
+                                </a>
+                            </li>
+                            <div id="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="game-mechanics.html">Game Mechanics</a>
+                            </li>
+                            <li>
+                                <a href="merchandise.html">Mercandises</a>
+                            </li>
+                            <li>
+                                <a href="registration.html">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li>
+                            <a class="logo-container" href="index.html">
+                                <div class="logo"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <div class="heroes-nav">
+                            <li>
+                                <a href="heroes.html">Heroes</a>
+                            </li>
+                            <div class="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <a href="game-mechanics.html">Game Mechanics</a>
+                        </li>
+                        <li>
+                            <a href="merchandise.html">Merchandises</a>
+                        </li>
+                        <li class="nav-end">
+                            <div class="round-button">
+                                <a href="registration.html">Register Now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="heroes-showcase">
+                    <div class="heroes-desc">
+                        <img src="./logo-img-stock/Sniper/sniper.png" alt="">
+                        <div class="hero-desc">
+                            <h1>SNIPER</h1>
+                            <div class="hero-type">
+                                <img src="./logo-img-stock/agilitiy.png" alt="">
+                                <h3>AGILITY</h3>
+                            </div>
+                            <p>Kardel Sharpeye was born deep in the mountains of Knollen where, since time immemorial, Keen Folk have survived by hunting the strange, cliff-dwelling steepstalkers above their village, shooting them from a distance and collecting the carcasses where they fell. Sharpeye was among the best of these strange mountain keens for whom projectile weapons are but another appendage, and to shoot is as natural as to touch.</p>
+                            <a class="btn" href="heroes.html">BACK TO ALL HEROES</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="heroes-abil">
+                <h1>ABILITIES</h1>
+                <video
+                    src="./logo-img-stock/rubick_fade_bolt.webm"
+                    no-controls
+                    autoplay
+                    muted
+                    loop
+                ></video>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Sniper/Shrapnel_icon.png" alt="">
+                    <div class="abil-desc">
+                        <h2>Shrapnel</h2>
+                        <p>Consumes a charge to launch a ball of shrapnel that showers the target area in explosive pellets. Enemies are subject to damage and slowed movement. Reveals the targeted area. Shrapnel charges restore every 35 seconds.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Sniper/Headshot_icon.png" alt="">
+                    <div class="abil-desc">
+                        <h2>Headshot</h2>
+                        <p>Sniper increases his accuracy, giving him a chance to deal extra damage and briefly knocks back his enemies.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Sniper/Take_Aim_icon.png" alt="">
+                    <div class="abil-desc">
+                        <h2>Take Aim</h2>
+                        <p>Extends the attack range of Sniper's rifle. Can be activated to provided True Strike and +30%% Headshot chance for 4 seconds. Slows you by 30%% for the duration.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Sniper/Assassinate_icon.png" alt="">
+                    <div class="abil-desc">
+                        <h2>Assassinate</h2>
+                        <p>Sniper locks onto a target enemy unit and, after a short aiming duration, fires a devastating shot that deals damage at long range and mini-stuns the target.</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="dota-logo">
+                    <img src="./logo-img-stock/logo-text.png" alt="">
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/dota2/">
+                        <div class="facebook"></div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/dota2/">
+                        <div class="instagram"></div>
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <p>Doto and the Doto logo are trademarks and/ or registered trademarks of Valve Corporation. 2021 Sunib Corporation, all rights reserved</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

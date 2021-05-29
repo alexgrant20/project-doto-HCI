@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doto 2</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cantora+One&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+        >
+        <link rel="icon" href="./logo-img-stock/logo.png">
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" media="screen and (max-width: 1300px)" href="stylesheet/mobile.css">
+        <script src="./js/script.js"></script>
+        <script src="./js/slider.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section id="main-content" class="merchandise">
+                <div id="nav-small">
+                    <div class="nav-header">
+                        <div class="toggle-btn" onclick="show('nav-s-content')">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo"></div>
+                    </div>
+                    <div id="nav-s-content">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li onclick="show('heroes-dropdown')">
+                                <a href="#">
+                                    Heroes
+                                    <i class="fas fa-arrow-down"></i>
+                                </a>
+                            </li>
+                            <div id="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="game-mechanics.html">Game Mechanics</a>
+                            </li>
+                            <li>
+                                <a class="picked" href="merchandise.html">Mercandises</a>
+                            </li>
+                            <li>
+                                <a href="registration.html">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li>
+                            <a class="logo-container" href="index.html">
+                                <div class="logo"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <div class="heroes-nav">
+                            <li>
+                                <a href="heroes.html">Heroes</a>
+                            </li>
+                            <div class="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <a href="game-mechanics.html">Game Mechanics</a>
+                        </li>
+                        <li>
+                            <a href="merchandise.html">Merchandises</a>
+                        </li>
+                        <li class="nav-end">
+                            <div class="round-button">
+                                <a href="registration.html">Register Now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="merchandise-section">
+                    <h1>MERCHANDISE</h1>
+                    <hr>
+                    <div class="merch-search">
+                        <p>FILTER MERCHANDISE</p>
+                        <div class="merch-type">
+                            <a href="merchandise-shirt.html">
+                                <i class="fas fa-tshirt fa-4x"></i>
+                            </a>
+                            <a href="merchandise-bag&cap.html">
+                                <i class="fas fa-shopping-bag fa-4x"></i>
+                            </a>
+                            <a href="merchandise-cup.html">
+                                <i class="fas fa-mug-hot fa-4x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-container">
+                        <ul>
+                            <li>
+                                <div class="merch">
+                                    <h3>ALL-STAR</h3>
+                                    <p>$25</p>
+                                    <img src="./logo-img-stock/merch-1.png" alt="">
+                                    <a href="merch-all-star.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>THE NERDY</h3>
+                                    <p>$30</p>
+                                    <img src="./logo-img-stock/merch-2.png" alt="">
+                                    <a href="merch-nerdy.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>THE HOOK</h3>
+                                    <p>$32</p>
+                                    <img src="./logo-img-stock/merch-3.png" alt="">
+                                    <a href="merch-the-hook.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>CAPPERS</h3>
+                                    <p>$10</p>
+                                    <img src="./logo-img-stock/merch-4.png" alt="">
+                                    <a href="merch-cappers.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>BAGGERS</h3>
+                                    <p>$40</p>
+                                    <img src="./logo-img-stock/merch-5.png" alt="">
+                                    <a href="merch-baggers.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>PILL'OW</h3>
+                                    <p>$5</p>
+                                    <img src="./logo-img-stock/merch-6.png" alt="">
+                                    <a href="merch-pll'ow.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>MUGGER</h3>
+                                    <p>$20</p>
+                                    <img src="./logo-img-stock/merch-7.png" alt="">
+                                    <a href="merch-mugger.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>JIGGERS</h3>
+                                    <p>$19</p>
+                                    <img src="./logo-img-stock/merch-8.png" alt="">
+                                    <a href="merch-jiggers.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>O'GABEN</h3>
+                                    <p>$15</p>
+                                    <img src="./logo-img-stock/merch-9.png" alt="">
+                                    <a href="merch-o'gaben.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>POOCHER</h3>
+                                    <p>$18</p>
+                                    <img src="./logo-img-stock/merch-10.png" alt="">
+                                    <a href="merch-poocher.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>WINRUNNER</h3>
+                                    <p>$26</p>
+                                    <img src="./logo-img-stock/merch-11.png" alt="">
+                                    <a href="merch-winrunner.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="merch">
+                                    <h3>LO'SER</h3>
+                                    <p>$15</p>
+                                    <img src="./logo-img-stock/merch-12.png" alt="">
+                                    <a href="merch-lo'ser.html" class="btn">BUY NOW</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="dota-logo">
+                    <img src="./logo-img-stock/logo-text.png" alt="">
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/dota2/">
+                        <div class="facebook"></div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/dota2/">
+                        <div class="instagram"></div>
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <p>Doto and the Doto logo are trademarks and/ or registered trademarks of Valve Corporation. 2021 Sunib Corporation, all rights reserved</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doto 2</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cantora+One&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+        >
+        <link rel="icon" href="./logo-img-stock/logo.png">
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" media="screen and (max-width: 1300px)" href="stylesheet/mobile.css">
+        <script src="./js/script.js"></script>
+        <script src="./js/slider.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section id="main-content" class="hero">
+                <div id="nav-small">
+                    <div class="nav-header">
+                        <div class="toggle-btn" onclick="show('nav-s-content')">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo"></div>
+                    </div>
+                    <div id="nav-s-content">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li onclick="show('heroes-dropdown')">
+                                <a class="picked" href="#">
+                                    Heroes
+                                    <i class="fas fa-arrow-down"></i>
+                                </a>
+                            </li>
+                            <div id="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="game-mechanics.html">Game Mechanics</a>
+                            </li>
+                            <li>
+                                <a href="merchandise.html">Mercandises</a>
+                            </li>
+                            <li>
+                                <a href="registration.html">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li>
+                            <a class="logo-container" href="index.html">
+                                <div class="logo"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <div class="heroes-nav">
+                            <li>
+                                <a href="heroes.html">Heroes</a>
+                            </li>
+                            <div class="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <a href="game-mechanics.html">Game Mechanics</a>
+                        </li>
+                        <li>
+                            <a href="merchandise.html">Merchandises</a>
+                        </li>
+                        <li class="nav-end">
+                            <div class="round-button">
+                                <a href="registration.html">Register Now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="heroes-showcase">
+                    <div class="heroes-desc">
+                        <img src="./logo-img-stock/Spectre/Spectre_Guide_Header.png" class="flip-h" alt="">
+                        <div class="hero-desc">
+                            <h1>SPECTRE</h1>
+                            <div class="hero-type">
+                                <img src="./logo-img-stock/agilitiy.png" alt="">
+                                <h3>AGILITY</h3>
+                            </div>
+                            <p>Just as higher states of energy seek a lower level, the Spectre known as Mercurial is a being of intense and violent energy who finds herself irresistibly drawn to scenes of strife as they unfold in the physical world. While her normal spectral state transcends sensory limitations, each time she takes on a physical manifestation, she is stricken by a loss of self--though not of purpose. In the clash of combat, her identity shatters and reconfigures, and she begins to regain awareness. She grasps that she is Mercurial the Spectre--and that all of her Haunts are but shadows of the one true Spectre. Focus comes in the struggle for survival; her true mind reasserts itself; until in the final moments of victory or defeat, she transcends matter and is restored once more to her eternal form.</p>
+                            <a class="btn" href="heroes.html">BACK TO ALL HEROES</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="heroes-abil">
+                <h1>ABILITIES</h1>
+                <video
+                    src="./logo-img-stock/rubick_fade_bolt.webm"
+                    no-controls
+                    autoplay
+                    muted
+                    loop
+                ></video>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Spectre/Spectral_Dagger_icon.png" alt="">
+                    <div class="abil-desc">
+                        <h2>Spectral Dagger</h2>
+                        <p>Spectre flings a dagger to draw a Shadow Path, dealing damage and slowing the movement speed of any enemies along the trail. Units hit by the dagger also trail a Shadow Path. While treading the path, Spectre phases through otherwise impassable terrain.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Spectre/Desolate_icon.png" alt="">
+                    <div class="abil-desc">
+                        <h2>Desolate</h2>
+                        <p>Deals bonus damage whenever Spectre attacks an enemy that does not have any allied units within a 425 radius around them.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Spectre/100px-Spectre_dispersion.png" alt="">
+                    <div class="abil-desc">
+                        <h2>Dispersion</h2>
+                        <p>Damage done to Spectre is reflected on her enemies, leaving her unharmed. The effect lessens with distance.</p>
+                    </div>
+                </div>
+                <div class="hero-abil">
+                    <img src="./logo-img-stock/Spectre/spectre-haunt-5337-4cb2f7bdcadb30a64f182ddf76fb45d65084a3baf4f94aaff46fe0b0ee996eda.jpg" alt="">
+                    <div class="abil-desc">
+                        <h2>Haunt</h2>
+                        <p>Creates a spectral nemesis to attack each enemy hero. At any moment during the duration, Spectre can use Reality to exchange places of a given haunt.</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="dota-logo">
+                    <img src="./logo-img-stock/logo-text.png" alt="">
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/dota2/">
+                        <div class="facebook"></div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/dota2/">
+                        <div class="instagram"></div>
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <p>Doto and the Doto logo are trademarks and/ or registered trademarks of Valve Corporation. 2021 Sunib Corporation, all rights reserved</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doto 2</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cantora+One&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+        >
+        <link rel="icon" href="./logo-img-stock/logo.png">
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" media="screen and (max-width: 1300px)" href="stylesheet/mobile.css">
+        <script src="./js/script.js"></script>
+        <script src="./js/slider.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section id="main-content" class="heroes">
+                <div id="nav-small">
+                    <div class="nav-header">
+                        <div class="toggle-btn" onclick="show('nav-s-content')">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo"></div>
+                    </div>
+                    <div id="nav-s-content">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li onclick="show('heroes-dropdown')">
+                                <a class="picked" href="#">
+                                    Heroes
+                                    <i class="fas fa-arrow-down"></i>
+                                </a>
+                            </li>
+                            <div id="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="game-mechanics.html">Game Mechanics</a>
+                            </li>
+                            <li>
+                                <a href="merchandise.html">Mercandises</a>
+                            </li>
+                            <li>
+                                <a href="registration.html">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li>
+                            <a class="logo-container" href="index.html">
+                                <div class="logo"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <div class="heroes-nav">
+                            <li>
+                                <a href="heroes.html">Heroes</a>
+                            </li>
+                            <div class="heroes-dropdown">
+                                <div class="heroes-type">
+                                    <a href="heroes-strength.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/strenth.png">
+                                            <p>Strength</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-agility.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/agilitiy.png">
+                                            <p>Agility</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="heroes-type">
+                                    <a href="heroes-inteligence.html">
+                                        <div class="dropdown-wrap">
+                                            <img class="icon" src="./logo-img-stock/magic.png">
+                                            <p>Inteligence</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <a href="game-mechanics.html">Game Mechanics</a>
+                        </li>
+                        <li>
+                            <a href="merchandise.html">Merchandises</a>
+                        </li>
+                        <li class="nav-end">
+                            <div class="round-button">
+                                <a href="registration.html">Register Now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="all-heroes-section">
+                    <h1>Heroes</h1>
+                    <hr>
+                    <div class="heroes-search">
+                        <p>FILTER HEROES</p>
+                        <div class="hero-type">
+                            <a href="heroes-agility.html">
+                                <img src="./logo-img-stock/agilitiy.png" class="icon-large" alt="">
+                            </a>
+                            <a href="heroes-strength.html">
+                                <img src="./logo-img-stock/strenth.png" class="icon-large" alt="">
+                            </a>
+                            <a href="heroes-inteligence.html">
+                                <img src="./logo-img-stock/magic.png" class="icon-large" alt="">
+                            </a>
+                        </div>
+                        <!-- <div class="hero-type">
+                        <img src="./logo-img-stock/hard-support.png" class="icon" alt="">
+                        <img src="./logo-img-stock/support.png" class="icon" alt="">
+                        <img src="./logo-img-stock/shiled.png" class="icon" alt="">
+                        <img src="./logo-img-stock/bow.png" class="icon" alt="">
+                        <img src="./logo-img-stock/sword.png" class="icon" alt="">
+                    </div> -->
+                    </div>
+                    <div class="grid-container">
+                        <ul>
+                            <li>
+                                <a href="abbadon.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/abbadon/hero.png" alt="">
+                                        <p>ABBADON</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="clinkz.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/clinkz/hero.png" alt="">
+                                        <p>CLINKZ</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="doom.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/doom/hero.png" alt="">
+                                        <p>DOOM</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faceless.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/faceles/hero.jpg" alt="">
+                                        <p>FACELESS VOID</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="invoker.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/invoker/hero.png" alt="">
+                                        <p>INVOKER</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lich.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/lich/hero.png" alt="">
+                                        <p>LICH</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="puck.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/puck/hero.png" alt="">
+                                        <p>PUCK</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="rubick.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/Rubick/hero.jpg" alt="">
+                                        <p>RUBICK</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sniper.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/Sniper/hero.png" alt="">
+                                        <p>SNIPER</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="spectre.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/Spectre/hero.png" alt="">
+                                        <p>SPECTRE</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sven.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/Sven/hero.png" alt="">
+                                        <p>SVEN</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tidehunter.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/Tidehunter/hero.png" alt="">
+                                        <p>TIDEHUNTER</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tiny.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/Tiny/hero.png" alt="">
+                                        <p>TINY</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="viper.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/Viper/hero.png" alt="">
+                                        <p>VIPER</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="zeus.html">
+                                    <div class="hero-con">
+                                        <img src="./logo-img-stock/Zeus/hero.png" alt="">
+                                        <p>ZEUS</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="dota-logo">
+                    <img src="./logo-img-stock/logo-text.png" alt="">
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/dota2/">
+                        <div class="facebook"></div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/dota2/">
+                        <div class="instagram"></div>
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <p>Doto and the Doto logo are trademarks and/ or registered trademarks of Valve Corporation. 2021 Sunib Corporation, all rights reserved</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
