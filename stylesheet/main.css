@@ -52,6 +52,24 @@ a{
     text-decoration: none;
 }
 
+.text-center{
+    margin: auto;
+    text-align: center;
+}
+
+.mr{
+    margin-right: 10px;
+}
+
+.mb{
+    margin-bottom: 10px;
+}
+
+.mb-2{
+    margin-bottom: 20px;
+}
+
+
 .grid-container{
     width: 80vw;
     margin: 100px auto;
@@ -120,6 +138,8 @@ a{
     color: #fff;
     border-radius: 5px;
     position: relative;
+    background: none;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -393,12 +413,9 @@ a{
 }
 
 #nav li a:hover{
-    filter: drop-shadow(0 0 0.75rem #fff);
+    filter: brightness(50%)
 }
 
-#nav .logo:hover{
-    filter: brightness(140%);
-}
 
 /* Header Content */
 .video-bg {
@@ -434,12 +451,11 @@ transform: translate(-50%,-50%);
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 10%;
     padding-bottom: 50px;
 }
 
 .h-content h1{
-    margin: 0;
+    margin-top: 15vh;
     padding-bottom: 5px;
 }
 
@@ -845,7 +861,7 @@ footer p{
   height: 100%;
   text-align: left;
   padding-bottom: 200px;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .registration .registration-header{
@@ -863,7 +879,7 @@ footer p{
 }
 
 .registration .content{
-    width: 80%;
+    width: 80vw;
     max-width: 450px;
     height: fit-content;
     background: rgb(255, 255, 255);
@@ -1390,4 +1406,180 @@ input{
 .game-mechanics{
     background-color: #485461;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    text-align: center;
+}
+
+#game-mech{
+    width: 80vw;
+    margin: 0px auto 100px;
+}
+
+
+#game-mech .btn{
+    width: auto;
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background: #15191f;
+    transition: border .3s;
+}
+
+
+#game-mech .btn:hover{
+    border: 2px solid #555;
+}
+
+#game-mech .gm-head h1{
+    margin: 100px 0 5px;
+}
+
+#game-mech .gm-head hr{
+    border: solid 4px rgba(155, 63, 63, 1);
+    margin: 0 auto 50px;
+    width: 20vw;
+}
+
+#game-mech .gm-body{
+    text-align: left;
+    margin: 30px auto 0;
+}
+
+#game-mech .gm-body .content-head{
+    margin-bottom: 40px;
+}
+
+#game-mech .gm-body .content-head hr{
+    width: 20vw;
+    margin: 10px auto 0;
+}
+
+#game-mech .gm-body .content-head .keyboard-container{
+    display: flex;
+    width: fit-content;
+    margin: 30px auto 0;
+}
+
+#game-mech .gm-body .content-head .keyboard{
+    position: relative;
+    top: 0; left: 0;
+    width: 100px; height: 100px;
+    border-radius: 16px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    transition: filter .6s;
+    background: conic-gradient(white 0%, white 5%, silver 16%, white 23%, white 24%, silver 28%, gray 34%, #666 50%, gray 65%, white 75%) transparent;
+}
+
+#game-mech .gm-body .content-head .keyboard::before{
+    content: attr(data-before);
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 16px;
+    font-size: 35px;
+    font-family: Arial;
+    font-weight: normal;
+    box-shadow: inset 0 0 13px #fff, 0 0 13px #fff,
+    rgb(124, 124, 124) 0px 0px 43px inset;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 16%, rgb(206, 206, 206) 92%, transparent 95%, rgb(206, 206, 206) 99%, rgb(206, 206, 206) 102%, rgb(206, 206, 206) 106%, rgb(206, 206, 206) 110%, rgb(206, 206, 206) 113%), linear-gradient(24.75deg, rgb(255, 255, 255) 33%, rgb(206, 206, 206) 37%, transparent 41%, rgb(206, 206, 206) 44%, rgb(206, 206, 206) 48%, rgb(206, 206, 206) 51%, rgb(206, 206, 206) 55%, rgb(206, 206, 206) 59%) transparent;
+}
+
+
+
+#game-mech .gm-body .content-head .keyboard p{
+    position: absolute;
+    text-align: right;
+    top: 35px;
+    right: 20px;
+    color: #fff;
+}
+
+#game-mech .gm-body .content-head .clicked{
+    filter: brightness(50%);
+}
+
+#game-mech .gm-body .content-head .ctn{
+    display: none;
+    width: 80vw;
+    height: auto;
+    min-height: 200px;
+    margin: 30px auto 0;
+}
+
+#game-mech .gm-body .content-head .ctn hr{
+    width: auto;
+    margin: 10px 0;
+    border: 3px solid #fff;
+}
+
+#game-mech .gm-body .content-head .ctn .ctn-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#game-mech .gm-body .content-head .ctn .ctn-description video{
+   width: 40vw;
+   height: auto;
+   margin-right: 20px;
+}
+
+#game-mech .gm-body .content-head .ctn .ctn-description p{
+    font-size: 20px;
+    margin-left: 20px;
+ }
+
+#game-mech .gm-body .content-head .ctn .video-desc{
+    display: flex;
+    flex-direction: row;
+    background-color: #222;
+    padding: 20px;
+}
+
+#game-mech .gm-body .content-head .ctn .video-desc img{
+   width: 96px;
+   height: 96px;
+}
+
+
+
+#game-mech .gm-body .content-head .content-placeholder{
+    text-align: center;
+    overflow:hidden;
+    position: relative;
+    animation: flickerAnimation 1.5s infinite;
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+
+#game-mech .gm-body .content{
+    margin-bottom: 30px;
+}
+
+#game-mech .gm-body .content p{
+    color: rgb(196, 196, 196);
+}
+
+#game-mech .gm-body hr{
+    margin: 10px 0;
+    border: 2px solid #ccc;
+}
+
+#game-mech .gm-body .text-master{
+    font-weight: bold;
+    color: #fff !important;
 }

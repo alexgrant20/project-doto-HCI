@@ -12,7 +12,6 @@ if(modalBtn){
     });
 }
 
-
 if(modalClose){
     modalClose.addEventListener('click', function(){
         modalBg.classList.remove('bg-active');
@@ -24,7 +23,6 @@ if(modalClose){
         modalBg.classList.remove('bg-active');
         location.replace("./merchandise.html");
     });
-        
 }
 
 
